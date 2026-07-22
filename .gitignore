@@ -16,19 +16,12 @@ port backend/Portfolio/mvnw.cmd
 Thumbs.db
 .DS_Store
 
-# Node / PHP dependencies (if any)
-port ui/node_modules/
-port ui/vendor/
-
 # ==========================
 # 🔒 SENSITIVE FILES - DO NOT COMMIT
 # ==========================
 
 # Backend - Real config with passwords (use .example file instead)
 port backend/Portfolio/src/main/resources/application.properties
-
-# Portfolio - Personal Resume PDF (contains address, phone, DOB)
-port ui/SanjeevMaurya_Resume.pdf
 
 # Environment / Secret files
 *.env

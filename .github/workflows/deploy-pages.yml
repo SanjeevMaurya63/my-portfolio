@@ -4,7 +4,14 @@ on:
   push:
     branches: [ "main" ]
     paths:
-      - 'port ui/**'
+      - '*.html'
+      - 'css/**'
+      - 'js/**'
+      - 'images/**'
+      - 'php/**'
+      - 'projects/**'
+      - 'certifications/**'
+      - 'manifest.json'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
@@ -33,7 +40,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'port ui'
+          path: '.'
 
       - name: Deploy to GitHub Pages
         id: deployment
