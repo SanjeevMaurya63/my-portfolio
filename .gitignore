@@ -20,3 +20,17 @@ Thumbs.db
 port ui/node_modules/
 port ui/vendor/
 
+# ==========================
+# 🔒 SENSITIVE FILES - DO NOT COMMIT
+# ==========================
+
+# Backend - Real config with passwords (use .example file instead)
+port backend/Portfolio/src/main/resources/application.properties
+
+# Environment / Secret files
+*.env
+*.secret
+*.key
+secrets.*
+config.*.local
+
