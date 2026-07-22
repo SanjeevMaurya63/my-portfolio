@@ -1,0 +1,22 @@
+# Java / Maven (Backend)
+port backend/Portfolio/target/
+port backend/Portfolio/*.class
+port backend/Portfolio/*.jar
+port backend/Portfolio/*.war
+port backend/Portfolio/.mvn/
+port backend/Portfolio/mvnw
+port backend/Portfolio/mvnw.cmd
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Node / PHP dependencies (if any)
+port ui/node_modules/
+port ui/vendor/
+

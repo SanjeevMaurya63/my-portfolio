@@ -1,0 +1,21 @@
+{
+  "name": "Sanjeev Maurya - Portfolio",
+  "short_name": "Sanjeev Maurya",
+  "description": "Portfolio of Sanjeev Maurya - Java Backend Developer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#191919",
+  "theme_color": "#1976D2",
+  "icons": [
+    {
+      "src": "images/hero_img.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "images/hero_img.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a1a"/>
+      <stop offset="50%" style="stop-color:#0a1a12"/>
+      <stop offset="100%" style="stop-color:#0a0a1a"/>
+    </linearGradient>
+    <linearGradient id="glow4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00BCD4;stop-opacity:0.15"/>
+      <stop offset="50%" style="stop-color:#009688;stop-opacity:0.05"/>
+      <stop offset="100%" style="stop-color:#00BCD4;stop-opacity:0"/>
+    </linearGradient>
+    <linearGradient id="accent_teal1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00838F"/>
+      <stop offset="100%" style="stop-color:#00BCD4"/>
+    </linearGradient>
+    <linearGradient id="accent_teal2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00695C"/>
+      <stop offset="100%" style="stop-color:#009688"/>
+    </linearGradient>
+    <linearGradient id="card_bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a2a"/>
+      <stop offset="100%" style="stop-color:#122222"/>
+    </linearGradient>
+    <filter id="neon4">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="720" fill="url(#bg4)"/>
+  <rect width="1280" height="720" fill="url(#glow4)"/>
+
+  <!-- Geometric decoration -->
+  <g opacity="0.04" stroke="#00BCD4" stroke-width="1" fill="none">
+    <polygon points="80,80 180,30 280,80 280,180 180,230 80,180"/>
+    <polygon points="1000,520 1100,470 1200,520 1200,620 1100,670 1000,620"/>
+  </g>
+
+  <!-- Main dashboard -->
+  <rect x="200" y="40" width="880" height="600" rx="20" fill="#12121a" stroke="rgba(0,188,212,0.12)" stroke-width="1.5"/>
+
+  <!-- Dashboard header -->
+  <rect x="200" y="40" width="880" height="60" rx="20" fill="url(#accent_teal1)" opacity="0.85"/>
+  <rect x="200" y="80" width="880" height="20" fill="url(#accent_teal1)" opacity="0.85"/>
+  
+  <text x="240" y="78" font-family="Arial" font-size="16" fill="#fff" font-weight="600">📚 Course Enrollment System</text>
+  
+  <!-- Admin badge -->
+  <rect x="720" y="58" width="60" height="22" rx="11" fill="rgba(255,255,255,0.15)"/>
+  <text x="750" y="73" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">Admin</text>
+  <rect x="790" y="58" width="60" height="22" rx="11" fill="rgba(255,255,255,0.1)"/>
+  <text x="820" y="73" font-family="Arial" font-size="10" fill="rgba(255,255,255,0.7)" text-anchor="middle">Logout</text>
+
+  <!-- Stats row -->
+  <rect x="230" y="115" width="200" height="80" rx="12" fill="url(#card_bg)" stroke="rgba(0,188,212,0.15)" stroke-width="1"/>
+  <text x="250" y="140" font-family="Arial" font-size="10" fill="#80CBC4">TOTAL STUDENTS</text>
+  <text x="250" y="170" font-family="Arial" font-size="28" fill="#00BCD4" font-weight="bold">1,247</text>
+  <text x="350" y="170" font-family="Arial" font-size="11" fill="#4DB6AC">▲ +12%</text>
+
+  <rect x="450" y="115" width="200" height="80" rx="12" fill="url(#card_bg)" stroke="rgba(0,188,212,0.15)" stroke-width="1"/>
+  <text x="470" y="140" font-family="Arial" font-size="10" fill="#80CBC4">ACTIVE COURSES</text>
+  <text x="470" y="170" font-family="Arial" font-size="28" fill="#00BCD4" font-weight="bold">24</text>
+  <text x="570" y="170" font-family="Arial" font-size="11" fill="#4DB6AC">▲ +3 new</text>
+
+  <rect x="670" y="115" width="200" height="80" rx="12" fill="url(#card_bg)" stroke="rgba(0,188,212,0.15)" stroke-width="1"/>
+  <text x="690" y="140" font-family="Arial" font-size="10" fill="#80CBC4">ENROLLMENTS</text>
+  <text x="690" y="170" font-family="Arial" font-size="28" fill="#00BCD4" font-weight="bold">3,892</text>
+  <text x="790" y="170" font-family="Arial" font-size="11" fill="#4DB6AC">▲ +8.5%</text>
+
+  <rect x="890" y="115" width="160" height="80" rx="12" fill="url(#card_bg)" stroke="rgba(0,188,212,0.15)" stroke-width="1"/>
+  <text x="910" y="140" font-family="Arial" font-size="10" fill="#80CBC4">CAPACITY</text>
+  <text x="910" y="170" font-family="Arial" font-size="28" fill="#00BCD4" font-weight="bold">87%</text>
+  <text x="990" y="170" font-family="Arial" font-size="11" fill="#FFB74D">⚠ Near limit</text>
+
+  <!-- Course enrollment table -->
+  <rect x="230" y="210" width="820" height="30" rx="6" fill="#0d1a1a"/>
+  <text x="250" y="230" font-family="Arial" font-size="11" fill="#80CBC4" font-weight="600">RECENT ENROLLMENTS</text>
+  <text x="1020" y="230" font-family="Arial" font-size="10" fill="#00BCD4">View All →</text>
+
+  <!-- Table header -->
+  <rect x="230" y="245" width="820" height="28" rx="4" fill="rgba(0,188,212,0.08)"/>
+  <text x="250" y="264" font-family="Arial" font-size="10" fill="rgba(255,255,255,0.5)">STUDENT</text>
+  <text x="430" y="264" font-family="Arial" font-size="10" fill="rgba(255,255,255,0.5)">COURSE</text>
+  <text x="650" y="264" font-family="Arial" font-size="10" fill="rgba(255,255,255,0.5)">DATE</text>
+  <text x="820" y="264" font-family="Arial" font-size="10" fill="rgba(255,255,255,0.5)">STATUS</text>
+  <text x="970" y="264" font-family="Arial" font-size="10" fill="rgba(255,255,255,0.5)">ACTION</text>
+
+  <!-- Row 1 -->
+  <rect x="230" y="278" width="820" height="36" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="256" cy="296" r="12" fill="#00838F" opacity="0.5"/>
+  <text x="256" y="300" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">RK</text>
+  <text x="280" y="300" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.8)">Rahul Kumar</text>
+  <text x="430" y="300" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.6)">Data Structures &amp; Algorithms</text>
+  <text x="650" y="300" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.5)">15 Jul 2026</text>
+  <rect x="810" y="288" width="60" height="16" rx="8" fill="rgba(76,175,80,0.2)"/>
+  <text x="840" y="300" font-family="Arial" font-size="9" fill="#81C784" text-anchor="middle">Active</text>
+  <rect x="950" y="286" width="50" height="20" rx="10" fill="rgba(0,188,212,0.15)"/>
+  <text x="975" y="300" font-family="Arial" font-size="9" fill="#00BCD4" text-anchor="middle">Edit</text>
+
+  <!-- Row 2 -->
+  <rect x="230" y="314" width="820" height="36"/>
+  <circle cx="256" cy="332" r="12" fill="#00695C" opacity="0.5"/>
+  <text x="256" y="336" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">PS</text>
+  <text x="280" y="336" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.8)">Priya Singh</text>
+  <text x="430" y="336" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.6)">Spring Boot Masterclass</text>
+  <text x="650" y="336" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.5)">14 Jul 2026</text>
+  <rect x="810" y="324" width="60" height="16" rx="8" fill="rgba(76,175,80,0.2)"/>
+  <text x="840" y="336" font-family="Arial" font-size="9" fill="#81C784" text-anchor="middle">Active</text>
+  <rect x="950" y="322" width="50" height="20" rx="10" fill="rgba(0,188,212,0.15)"/>
+  <text x="975" y="336" font-family="Arial" font-size="9" fill="#00BCD4" text-anchor="middle">Edit</text>
+
+  <!-- Row 3 -->
+  <rect x="230" y="350" width="820" height="36" fill="rgba(255,255,255,0.02)"/>
+  <circle cx="256" cy="368" r="12" fill="#00838F" opacity="0.5"/>
+  <text x="256" y="372" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">AV</text>
+  <text x="280" y="372" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.8)">Amit Verma</text>
+  <text x="430" y="372" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.6)">Microservices Architecture</text>
+  <text x="650" y="372" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.5)">12 Jul 2026</text>
+  <rect x="806" y="360" width="68" height="16" rx="8" fill="rgba(255,152,0,0.2)"/>
+  <text x="840" y="372" font-family="Arial" font-size="9" fill="#FFB74D" text-anchor="middle">Pending</text>
+  <rect x="950" y="358" width="50" height="20" rx="10" fill="rgba(0,188,212,0.15)"/>
+  <text x="975" y="372" font-family="Arial" font-size="9" fill="#00BCD4" text-anchor="middle">Edit</text>
+
+  <!-- Row 4 -->
+  <rect x="230" y="386" width="820" height="36"/>
+  <circle cx="256" cy="404" r="12" fill="#00695C" opacity="0.5"/>
+  <text x="256" y="408" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle">SN</text>
+  <text x="280" y="408" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.8)">Sneha Nair</text>
+  <text x="430" y="408" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.6)">Database Design &amp; MySQL</text>
+  <text x="650" y="408" font-family="Arial" font-size="11" fill="rgba(255,255,255,0.5)">10 Jul 2026</text>
+  <rect x="810" y="396" width="60" height="16" rx="8" fill="rgba(76,175,80,0.2)"/>
+  <text x="840" y="408" font-family="Arial" font-size="9" fill="#81C784" text-anchor="middle">Active</text>
+  <rect x="950" y="394" width="50" height="20" rx="10" fill="rgba(0,188,212,0.15)"/>
+  <text x="975" y="408" font-family="Arial" font-size="9" fill="#00BCD4" text-anchor="middle">Edit</text>
+
+  <!-- Quick actions section -->
+  <rect x="230" y="440" width="400" height="95" rx="12" fill="url(#card_bg)" stroke="rgba(0,188,212,0.1)" stroke-width="1"/>
+  <text x="250" y="460" font-family="Arial" font-size="11" fill="#80CBC4" font-weight="600">QUICK ACTIONS</text>
+  
+  <rect x="250" y="475" width="180" height="24" rx="12" fill="rgba(0,188,212,0.12)"/>
+  <text x="340" y="492" font-family="Arial" font-size="10" fill="#00BCD4" text-anchor="middle">+ Add New Student</text>
+  <rect x="440" y="475" width="170" height="24" rx="12" fill="rgba(0,188,212,0.12)"/>
+  <text x="525" y="492" font-family="Arial" font-size="10" fill="#00BCD4" text-anchor="middle">+ Create Course</text>
+  <rect x="250" y="505" width="200" height="24" rx="12" fill="rgba(0,188,212,0.12)"/>
+  <text x="350" y="522" font-family="Arial" font-size="10" fill="#00BCD4" text-anchor="middle">📋 Bulk Enrollment</text>
+
+  <!-- Enrollment form preview -->
+  <rect x="650" y="440" width="400" height="95" rx="12" fill="url(#card_bg)" stroke="rgba(0,188,212,0.1)" stroke-width="1"/>
+  <text x="670" y="460" font-family="Arial" font-size="11" fill="#80CBC4" font-weight="600">NEW ENROLLMENT</text>
+  <rect x="670" y="472" width="170" height="20" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(0,188,212,0.15)" stroke-width="1"/>
+  <text x="680" y="486" font-family="Arial" font-size="9" fill="rgba(255,255,255,0.3)">Student ID...</text>
+  <rect x="855" y="472" width="170" height="20" rx="6" fill="rgba(255,255,255,0.05)" stroke="rgba(0,188,212,0.15)" stroke-width="1"/>
+  <text x="865" y="486" font-family="Arial" font-size="9" fill="rgba(255,255,255,0.3)">Course Code...</text>
+  <rect x="670" y="500" width="120" height="22" rx="11" fill="url(#accent_teal1)"/>
+  <text x="730" y="515" font-family="Arial" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">Enroll ✓</text>
+
+  <!-- Docker/badge area -->
+  <rect x="230" y="548" width="820" height="25" rx="6" fill="rgba(0,0,0,0.3)"/>
+  <text x="640" y="565" font-family="Arial" font-size="9" fill="rgba(255,255,255,0.3)" text-anchor="middle">⚙ Built with Spring Boot · MySQL · REST APIs · Deployed on Docker + Render</text>
+
+  <!-- Title and subtitle -->
+  <rect x="0" y="620" width="1280" height="100" fill="url(#bg4)"/>
+  <text x="640" y="660" font-family="Arial, sans-serif" font-size="32" fill="#fff" text-anchor="middle" font-weight="bold" letter-spacing="2">Course Enrollment System</text>
+  <text x="640" y="690" font-family="Arial, sans-serif" font-size="14" fill="#80CBC4" text-anchor="middle" letter-spacing="3">Spring Boot · MySQL · Docker · REST APIs · Student Management</text>
+  <rect x="540" y="708" width="200" height="2" rx="1" fill="url(#accent_teal1)"/>
+</svg>
+
