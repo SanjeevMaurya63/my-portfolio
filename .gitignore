@@ -27,6 +27,9 @@ port ui/vendor/
 # Backend - Real config with passwords (use .example file instead)
 port backend/Portfolio/src/main/resources/application.properties
 
+# Portfolio - Personal Resume PDF (contains address, phone, DOB)
+port ui/SanjeevMaurya_Resume.pdf
+
 # Environment / Secret files
 *.env
 *.secret
